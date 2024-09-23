@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main{
     //ЗДЕСЬ ДЕЛАЮ ДРУГИЕ МЕТОДЫ
-   //            private static void checkLeap (year) {
+
 
 
     //ЗДЕСЬ НАЧИНАЕТСЯ метод MAIN
@@ -12,15 +12,7 @@ public class Main{
 проверяет, является ли он високосным, и выводит результат в консоль.
  */
         int year = 2020;
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println(year + "год является високосным.");
-        } else {
-            System.out.println(year + "год не является високосным.");
-        }
-
-
-
-
+        checkLeapAndPrint(year);
 
 
 //task3
@@ -37,4 +29,12 @@ public class Main{
         }
 */
     } //тут конец метода main
+
+    private static void checkLeapAndPrint(int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + "год является високосным.");
+        } else {
+            System.out.println(year + "год не является високосным.");
+        }
+    }
 }
